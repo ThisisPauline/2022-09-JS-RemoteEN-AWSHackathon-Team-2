@@ -23,7 +23,7 @@ export default function Home() {
       <div className="my-10 text-[#F3971F] text-[32px] font-bold ml-10 mr-10 text-center">
         Book a car with AWS Rent a Car
       </div>
-      <div className="mx-10 text-[#FFFFFF]">
+      <div className="mx-10 mb-10 text-[#FFFFFF]">
         Welcome to AWS Rent a Car, a global leader in car rental and you can
         hire a car or a commercial van from any one of our 3835 rental locations
         worldwide.
