@@ -28,7 +28,7 @@ export default function Home() {
       <Header />
 
       <h1 className="flex align-left ml-[36px] mt-[47px] text-[#F3971F] text-[32px] font-[800]">
-        Chose Your Car
+        Choose Your Car
       </h1>
       <div>
         <Car cars={cars} />
