@@ -4,6 +4,42 @@ const Car = ({ cars }) => {
       {cars.map((cars) => {
         return (
           <li className="mt-20" key={cars.id}>
+            <div className="mt-10">
+          <p className="text-sm font-medium text-white">{cars.CarName}</p>
+          <p className="text-xs font-normal text-white">or similar Economy</p>
+        </div>
+        <div className="flex">
+          <div className="mr-10">
+            {/* <Image src={Fiat} alt="Fiat 500" /> */}
+          </div>
+          <div className="grid grid-rows-2 grid-flow-col gap-2 items-center">
+            <div className="border-l-2 border-[#F3971F] h-8">
+              <p className="carFontDetail font-normal text-white ml-2">
+              {cars.TransmissionMode} Transmission
+              </p>
+            </div>
+            <div className="border-l-2 border-[#F3971F] h-8">
+              <p className="carFontDetail font-normal text-white ml-2">
+              {cars.NbPassengers} Passengers
+              </p>
+            </div>
+            <div className="border-l-2 border-[#F3971F] h-8">
+              <p className="carFontDetail font-normal text-white ml-2">
+              {cars.PowerSteering} Steering
+              </p>
+            </div>
+            <div className="border-l-2 border-[#F3971F] h-8">
+              <p className="carFontDetail font-normal text-white ml-2">
+              {cars.NbDoors} Doors
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        {/* THIS IS FOR TESTING PURPOSES */}
+        
             <div>
               <b>id:</b> {cars.CarId}
             </div>
