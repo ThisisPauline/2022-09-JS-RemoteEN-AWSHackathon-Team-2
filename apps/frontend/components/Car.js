@@ -31,7 +31,7 @@ const Car = ({ cars }) => {
             <div>
               <b>DailyPrice:</b> {cars.DailyPrice}
             </div>
-            <button className="mt-10 bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 rounded-full w-full">
+            <button className="mt-10 bg-[#F3971F] text-white font-normal py-2 px-4 mx-10 rounded-full w-4/5">
               Choose Car
             </button>
           </li>
