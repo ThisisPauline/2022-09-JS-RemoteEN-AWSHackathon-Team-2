@@ -35,7 +35,7 @@ const ContinueReview = () => {
           <p className="text-xs font-normal text-white">or similar Economy</p>
         </div>
         <div className="flex">
-          <div className="">
+          <div className="mr-10">
             <Image src={Fiat} alt="Fiat 500" />
           </div>
           <div className="grid grid-rows-2 grid-flow-col gap-2 items-center">
@@ -86,10 +86,10 @@ const ContinueReview = () => {
         </div>
       </div>
       <div className="flex justify-evenly loginBackground my-6">
-        <div className="w-full">
+        <div className="w-full pt-3">
           {logIn ? <button onClick={handleLogIn} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> log in with </button> : <button onClick={handleLogIn} className="text-sm font-normal text-white uppercase pb-2 w-full"> log in with </button>}
         </div>
-        <div className="w-full">
+        <div className="w-full pt-3">
           {signUp ? <button onClick={handleSignUp} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> create an account </button> : <button onClick={handleSignUp} className="text-sm font-normal text-white uppercase pb-2 w-full"> create an account </button>}
         </div>
       </div>
