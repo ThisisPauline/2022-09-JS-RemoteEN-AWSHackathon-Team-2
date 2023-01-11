@@ -88,7 +88,7 @@ const ContinueReview = () => {
           {logIn ? <button onClick={handleLogIn} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> log in with </button> : <button onClick={handleLogIn} className="text-sm font-normal text-white uppercase pb-2 w-full"> log in with </button>}
         </div>
         <div className="w-full">
-          {signUp ? <button onClick={handleSignUp} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> sign up with </button> : <button onClick={handleSignUp} className="text-sm font-normal text-white uppercase pb-2 w-full"> create an account </button>}
+          {signUp ? <button onClick={handleSignUp} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> create an account </button> : <button onClick={handleSignUp} className="text-sm font-normal text-white uppercase pb-2 w-full"> create an account </button>}
         </div>
       </div>
       {logIn && (
