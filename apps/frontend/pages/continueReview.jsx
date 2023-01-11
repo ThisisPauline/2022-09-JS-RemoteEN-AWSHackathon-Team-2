@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import Fiat from "../assets/pngwing.png";
+import Header from "../components/Header";
 
 const ContinueReview = () => {
   const [logIn, setLogIn] = useState(true);
@@ -22,7 +23,8 @@ const ContinueReview = () => {
 
   return (
     <div>
-      <div className="flex flex-col mx-9">
+      <Header />
+      <div className="flex flex-col mx-9 mt-10">
         <div>
           <h1 className="text-3xl font-extrabold text-[#F3971F]">
             Review Order
