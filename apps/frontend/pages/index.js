@@ -13,8 +13,15 @@ export default function Home() {
     <div className="bg-[#242F3E] h-screen">
       <Header />
       <Image className="mx-auto mt-10 w-30 h-30" src={awsLogo} />
-      <h1 className="flex justify-center mt-5">RENT A CAR</h1>
+      <h1 className="flex justify-center mt-5 text-white">RENT A CAR</h1>
       <Image className="w-90 h-90" src={carPicture} />
+      <div className="">Rent a Car</div>
+      <div className="">Book a car with AWS Rent a Car</div>
+      <div className="">
+        Welcome to AWS Rent a Car, a global leader in car rental and you can
+        hire a car or a commercial van from any one of our 3835 rental locations
+        worldwide.
+      </div>
     </div>
   );
 }
