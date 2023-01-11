@@ -2,7 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.scss";
-import Header from "../components/Header"
+import Header from "../components/Header";
+import awsLogo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
+import carPicture from "../assets/carMain.png"
 
 const inter = Inter({ subsets: ["latin"] });
 
