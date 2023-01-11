@@ -1,22 +1,15 @@
-import axios from "axios";
-import { useState, useEffect } from "React";
-
-const Car = () => {
-  const [cars, setCars] = useState([]);
-
-  const backendURL = "http://localhost:5055";
-
-  useEffect(() => {
-    axios
-      .get(`${backendURL}`)
-      .then((response) => response.data)
-      .then((data) => setCars(data));
-  }, []);
-
+const Car = ({ cars }) => {
   return (
-    <div>
-      <div>{cars.CarName}</div>
-    </div>
+    <ul>
+      {cars.map((cars) => {
+        return (
+          <li key={cars.id}>
+            <div>Name: {cars.CarName}</div>
+          <div>PowerSteering? {cars.PowerSteering}</div>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

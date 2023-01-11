@@ -8,7 +8,9 @@ import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ cars }) {
+export default function Home() {
+  const [cars, setCars] = useState([]);
+
   const URI = "http://localhost:5055";
 
   useEffect(() => {
@@ -29,10 +31,7 @@ export default function Home({ cars }) {
         Chose Your Car
       </h1>
       <div>
-        {cars.map((car) => {
-          console.log(movie);
-          return <Car key={car.id} car={car} />;
-        })}
+        <Car cars={cars} />
       </div>
     </div>
   );
