@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .rdrDateDisplay {
+        margin: 0 !important;
+    }
+    .rdrCalendarWrapper{
+        background-color: transparent !important;
+    }
+    .rdrDateDisplayWrapper{
+        background-color: transparent !important;
+        
+    }
+    .rdrDayNumber span {
+        color: #7A7585 !important;
+    }
+    .rdrWeekDay{
+        color: #fff !important;
+    }
+    .rdrMonthAndYearPickers select{
+        color: #fff !important;
+        text-transform: uppercase !important;
+    }
+    .rdrDateDisplayItem{
+        background-color: transparent !important;
+    }
+    .rdrDateDisplayItem input{
+        color: #fff !important;
+        border-color: transparent !important;
+    }
+    .rdrDateDisplay{
+        color: transparent !important;
+    }
+
+    .rdrDayToday .rdrDayNumber span:after {
+        display: none !important;
+    }
+}
