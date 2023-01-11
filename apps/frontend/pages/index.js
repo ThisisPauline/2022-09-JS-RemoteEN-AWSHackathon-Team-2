@@ -20,7 +20,7 @@ export default function Home() {
       <div className="">
         Welcome to AWS Rent a Car, a global leader in car rental and you can
         hire a car or a commercial van from any one of our 3835 rental locations
-        worldwide.
+        worldwide. Test
       </div>
     </div>
   );
