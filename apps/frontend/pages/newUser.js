@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
+import Link from "next/link";
 
 const signUp = () => {
   return (
@@ -91,9 +92,13 @@ const signUp = () => {
               />
             </div>
             <div className="flex w-full mt-10">
-              <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-                Sign Up
-              </button>
+              <div className="flex w-full mt-4">
+                <Link className="mx-auto w-full" href="/userAccount">
+                  <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mb-[42px] rounded-full w-full">
+                    Sign Up
+                  </button>
+                </Link>
+              </div>
             </div>
             <div>
               <p className="text-[#F3971F] carFontDetail mt-[42px] mb-[42px]">

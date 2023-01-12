@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Fiat from "../assets/pngwing.png";
 import Header from "../components/Header";
+import Link from "next/link";
 
 const ContinueReview = () => {
   const [logIn, setLogIn] = useState(true);
@@ -150,13 +151,15 @@ const ContinueReview = () => {
               <p className="text-white carFontDetail">I forgot my password</p>
             </div>
             <div className="flex w-full my-10">
-              <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-                Login
-              </button>
+              <Link className="mx-auto w-full" href="/orderConfirm">
+                <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mb-[42px] rounded-full w-full">
+                  Confirm
+                </button>
+              </Link>
             </div>
             <div>
               <p className="text-[#F3971F] carFontDetail">
-                by loggin in, you agree with the Privacy Policy of AWS Rent a
+                By logging in, you agree with the Privacy Policy of AWS Rent a
                 Car
               </p>
             </div>
@@ -251,7 +254,8 @@ const ContinueReview = () => {
             </div>
             <div>
               <p className="text-[#F3971F] carFontDetail">
-                by sigin up, you agree with the Privacy Policy of AWS Rent a Car
+                By signing up, you agree with the Privacy Policy of AWS Rent a
+                Car
               </p>
             </div>
           </div>
