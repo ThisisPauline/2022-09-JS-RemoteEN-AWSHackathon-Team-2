@@ -6,7 +6,7 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 import { IoChevronForwardCircleOutline } from "react-icons/io5";
 import { BiLockAlt, BiLogOutCircle } from "react-icons/bi";
 
-const accountCompany = () => {
+const accountCompanyInfo = () => {
   return (
     <div className="bg-white">
       <div className="flex flex-col mx-9">
@@ -25,10 +25,8 @@ const accountCompany = () => {
       <div className="flex flex-col mx-9 mt-20">
         <div>
           <div className="flex justify-between items-center">
-            <p className="uppercase text-[#242F3E] text-sm">
-              Company information
-            </p>
-            <p className="text-[#F3971F]">EDIT</p>
+            <p className="uppercase text-[#242F3E] text-sm">Company name</p>
+            <p className="text-[#F3971F]">YOUR COMPANY NAME</p>
           </div>
           <div className="relative flex py-5 items-center">
             <div className="flex-grow border-t border-[#242F3E]"></div>
@@ -36,18 +34,8 @@ const accountCompany = () => {
         </div>
         <div>
           <div className="flex justify-between items-center">
-            <p className="uppercase text-[#242F3E] text-sm">Add vehicle</p>
-            <AiOutlinePlusCircle className="text-2xl text-[#F3971F]" />
-          </div>
-          <div className="relative flex py-5 items-center">
-            <div className="flex-grow border-t border-[#242F3E]"></div>
-          </div>
-        </div>
-        <div></div>
-        <div>
-          <div className="flex justify-between items-center">
-            <p className="uppercase text-[#242F3E] text-sm">privacy policy</p>
-            <BiLockAlt className="text-2xl text-[#F3971F]" />
+            <p className="uppercase text-[#242F3E] text-sm">COUNTRY</p>
+            <p className="text-[#F3971F]">COMPANY COUNTRY</p>
           </div>
           <div className="relative flex py-5 items-center">
             <div className="flex-grow border-t border-[#242F3E]"></div>
@@ -55,24 +43,34 @@ const accountCompany = () => {
         </div>
         <div>
           <div className="flex justify-between items-center">
-            <p className="uppercase text-[#242F3E] text-sm">log out</p>
-            <BiLogOutCircle className="text-2xl text-[#F3971F]" />
+            <p className="uppercase text-[#242F3E] text-sm">phone</p>
+            <p className="text-[#F3971F]">+4900 000 00 00</p>
           </div>
           <div className="relative flex py-5 items-center">
             <div className="flex-grow border-t border-[#242F3E]"></div>
           </div>
-          <div className="my-20">
-            <div className="flex justify-center">
-              <Image src={logoDark} alt="AWS Logo" />
-            </div>
-            <div className="flex text-sm uppercase justify-center mt-2">
-              <p className="text-[#242F3E]">rent a car</p>
-            </div>
+        </div>
+        <div>
+          <div className="flex justify-between items-center">
+            <p className="uppercase text-[#242F3E] text-sm">email</p>
+            <p className="text-[#F3971F]">contact@email.com</p>
           </div>
+          <div className="relative flex py-5 items-center">
+            <div className="flex-grow border-t border-[#242F3E]"></div>
+          </div>
+
+          <button className="border border-[#242F3E] text-[#242F3E] font-normal py-2 px-4  mt-[42px] rounded-full w-full">
+            Cancel
+          </button>
+        </div>
+        <div className="flex w-full mt-4">
+          <button className=" bg-[#242F3E] text-white font-normal py-2 px-4  mb-[42px] rounded-full w-full">
+            Save
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default accountCompany;
+export default accountCompanyInfo;
