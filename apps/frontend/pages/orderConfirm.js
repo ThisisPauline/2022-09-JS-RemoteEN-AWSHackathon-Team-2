@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Fiat from "../assets/pngwing.png";
 import Paypal from "../assets/paypal-784404_1280.png";
+import Stripe from "../assets/stripe.png";
 import Header from "../components/Header";
 
 const orderConfirm = () => {
@@ -81,19 +82,23 @@ const orderConfirm = () => {
           </div>
         </div>
         <form>
-          <div className="mx-9 mt-10">
-            <div className="flex w-full mt-10 mb-10">
-              <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-                Pay later & Confirm
-              </button>
-            </div>
-            <div>
-              <p className="text-[#F3971F] carFontDetail mb-[42]">
-                by loggin in, you agree with the Privacy Policy of AWS Rent a
-                Car
-              </p>
-            </div>
-          </div>
+          <div className="mx-9 mt-10">      
+        <div className="flex w-full mt-10">
+          <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
+            Pay later & Confirm
+          </button>
+        </div>
+        <div className="flex w-full my-4">
+          <button className="flex justify-center bg-white text-white font-normal py-2 px-4 rounded-full w-full">
+            <Image className="w-14" src={Paypal} alt="Paypal" />
+          </button>
+        </div>
+        <div className="flex w-full my-4">
+          <button className="flex justify-center bg-white text-white font-normal py-2 px-4 rounded-full w-full">
+            <Image className="w-14" src={Stripe} alt="Stripe" />
+          </button>
+        </div>
+      </div>
         </form>
       </div>
     </div>
