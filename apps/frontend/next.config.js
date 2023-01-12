@@ -5,6 +5,11 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['lh6.googleusercontent.com', 'lh5.googleusercontent.com'], 
-},
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.googleusercontent.com',
+      },
+    ],
+  },
 }
