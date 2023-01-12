@@ -2,8 +2,10 @@ import React from "react";
 import hamburger from "../assets/menu.png";
 import login from "../assets/login.png";
 import Image from "next/image";
+import Link from "next/link";
 import Menu from "./Menu";
 import { useState, useEffect } from "react";
+
 
 export default function header() {
   const [menu, setMenu] = useState(false);
@@ -19,6 +21,7 @@ export default function header() {
   }
 
   return (
+
     <div
       className={
         menu
@@ -33,7 +36,11 @@ export default function header() {
           <Image src={hamburger} alt="hamburger" />
         </button>
       )}
-      {menu ? " " : <Image src={login} alt="login" />}
+      {menu ? " " : <div className="">
+        <Link className="mx-auto w-1/2" href="/login">
+          <Image src={login} alt="login" />
+        </Link>
+      </div>}
       {menu ? (
         <div className="overflow-hidden">
           <Menu menu={menu} setMenu={setMenu} />
