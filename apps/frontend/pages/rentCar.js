@@ -130,7 +130,7 @@ export default function rentCar() {
           <option value="Croatia">Croatia</option>
         </select>
       </div>
-      <div className="flex w-full mt-4">
+      <div className="flex w-full mt-4 mb-10">
         <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 rounded-full w-full">
           Search
         </button>
