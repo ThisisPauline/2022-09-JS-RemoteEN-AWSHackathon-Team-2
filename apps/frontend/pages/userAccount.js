@@ -71,7 +71,7 @@ const orderConfirm = () => {
               <Image src={logo} alt="AWS Logo" />
             </div>
             <div className="flex text-sm uppercase justify-center mt-2">
-              <p className="text-white">rent a car </p>
+              <p className="text-white">rent a car</p>
             </div>
             </div>
           </div>
