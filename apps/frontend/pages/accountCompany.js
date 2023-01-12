@@ -38,7 +38,7 @@ const accountCompany = () => {
         <div>
           <div className="flex justify-between items-center">
             <p className="uppercase text-[#242F3E] text-sm">Add vehicle</p>
-            <AiOutlinePlusCircle className="text-2xl text-[#F3971F]" />
+            <Link href="/addNewVehicule"><AiOutlinePlusCircle className="text-2xl text-[#F3971F]" /></Link>
           </div>
           <div className="relative flex py-5 items-center">
             <div className="flex-grow border-t border-[#242F3E]"></div>

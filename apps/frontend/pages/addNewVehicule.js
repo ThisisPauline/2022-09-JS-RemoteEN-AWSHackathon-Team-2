@@ -83,15 +83,15 @@ const addNewVehicules = () => {
               />
             </div>
 
-            <div className="flex w-full mt-10">
-              <div className="flex w-full mt-4">
-                <Link className="mx-auto w-full" href="/userAccount">
-                  <button className=" bg-[#242F3E] text-white font-normal py-2 px-4 mb-[42px] rounded-full w-full">
-                    Save
-                  </button>
-                </Link>
-              </div>
-            </div>
+            <div className="flex w-full mb-10 mt-20">
+          <div className="flex w-full">
+            <Link className="mx-auto w-full" href="/accountCompany">
+              <button className="bg-[#121A25] text-white font-normal py-2 px-4 rounded-full w-full">
+                Save
+              </button>
+            </Link>
+          </div>
+        </div>
           </div>
         </form>
       </div>
