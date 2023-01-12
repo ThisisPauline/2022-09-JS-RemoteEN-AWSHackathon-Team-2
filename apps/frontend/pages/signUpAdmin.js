@@ -1,8 +1,9 @@
 import React from "react";
 
-const companySignUp = () => {
+
+const signUpAdmin = () => {
  return (
-    <div className="flex flex-col justify-center h-screen">
+    <div className="flex flex-col justify-center h-screen bg-[#F3971F]">
         <form>
         <div className="flex justify-center mt-8">
               <h1 className="text-2xl font-extrabold uppercase text-[#121A25]">
@@ -17,7 +18,7 @@ const companySignUp = () => {
         <input
           type="text"
           id="text"
-          className="border border-[#121A25] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#121A25] bg-[#F3971F] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
           placeholder="name"
           required
         />
@@ -26,7 +27,7 @@ const companySignUp = () => {
       <input
           type="text"
           id="country"
-          className="border border-[#121A25] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#121A25] bg-[#F3971F] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
           placeholder="country of residence"
           required
         />
@@ -35,7 +36,7 @@ const companySignUp = () => {
       <input
           type="number"
           id="phne_number"
-          className="border border-[#121A25] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#121A25] bg-[#F3971F] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
           placeholder="phone number"
           required
         />
@@ -49,7 +50,7 @@ const companySignUp = () => {
       <input
           type="email"
           id="email"
-          className="border border-[#121A25] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#121A25] bg-[#F3971F] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
           placeholder="email"
           required
         />
@@ -58,7 +59,7 @@ const companySignUp = () => {
         <input
           type="password"
           id="password"
-          className="border border-[#121A25] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#121A25] bg-[#F3971F] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
           placeholder="password"
           required
         />
@@ -67,13 +68,13 @@ const companySignUp = () => {
         <input
           type="password"
           id="confirm_password"
-          className="border border-[#121A25] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#121A25] bg-[#F3971F] text-[#121A25] text-sm rounded-full block w-full p-2.5 "
           placeholder="confirm password"
           required
         />
       </div>
       <div className="my-2">
-        <p className="text-[#F3971F] carFontDetail">Fields with * must be filled in.</p>
+        <p className="text-[#121A25] carFontDetail">Fields with * must be filled in.</p>
       </div>
       <div className="flex w-full my-10">
         <button className=" bg-[#121A25] text-white font-normal py-2 px-4 rounded-full w-full">
@@ -91,4 +92,4 @@ const companySignUp = () => {
  )
 }
 
-export default companySignUp;
+export default signUpAdmin;
