@@ -51,5 +51,17 @@
     .loginBackground {
         background-color: #121A25 !important;
     }
+    .react-datepicker{
+        background-color: #242F3E !important;
+        border: 0 !important;
+    }
+    .react-datepicker__header{
+        background-color: #242F3E !important;
+        border: 0 !important;
+        text-align: end !important;
+    }
+    .react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header{
+        color: #fff !important;
+    }
 }
 
