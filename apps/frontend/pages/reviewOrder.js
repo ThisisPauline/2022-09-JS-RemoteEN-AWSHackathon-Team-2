@@ -9,7 +9,7 @@ const ContinueReview = () => {
   const [signUp, setSignUp] = useState(false);
   const myRef = React.createRef();
   const [isOpen, setIsOpen] = useState(false);
-  const [country, setCountry] = useState('FR');
+  const [country, setCountry] = useState("FR");
 
   const handleLogIn = () => {
     setLogIn(true);
@@ -87,142 +87,176 @@ const ContinueReview = () => {
       </div>
       <div className="flex justify-evenly bg-[#121A25] my-6">
         <div className="w-full pt-3">
-          {logIn ? <button onClick={handleLogIn} className="text-sm font-normal text-white border-b-2 border-[#F3971F]  uppercase pb-2 w-full"> log in with </button> : <button onClick={handleLogIn} className="text-sm font-normal text-white uppercase pb-2 w-full"> log in with </button>}
+          {logIn ? (
+            <button
+              onClick={handleLogIn}
+              className="text-sm font-normal text-white border-b-2 border-[#F3971F]  uppercase pb-2 w-full"
+            >
+              {" "}
+              log in with{" "}
+            </button>
+          ) : (
+            <button
+              onClick={handleLogIn}
+              className="text-sm font-normal text-white uppercase pb-2 w-full"
+            >
+              {" "}
+              log in with{" "}
+            </button>
+          )}
         </div>
         <div className="w-full pt-3">
-          {signUp ? <button onClick={handleSignUp} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> create an account </button> : <button onClick={handleSignUp} className="text-sm font-normal text-white uppercase pb-2 w-full"> create an account </button>}
+          {signUp ? (
+            <button
+              onClick={handleSignUp}
+              className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"
+            >
+              {" "}
+              create an account{" "}
+            </button>
+          ) : (
+            <button
+              onClick={handleSignUp}
+              className="text-sm font-normal text-white uppercase pb-2 w-full"
+            >
+              {" "}
+              create an account{" "}
+            </button>
+          )}
         </div>
       </div>
       {logIn && (
         <form>
           <div className="mx-9 mt-10">
-        <div className="flex w-full mt-4">
-          <input
-            type="email"
-            id="email"
-            className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-            placeholder="email"
-            required
-          />
-        </div>
-        <div className="flex w-full mt-4">
-          <input
-            type="password"
-            id="password"
-            className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-            placeholder="password"
-            required
-          />
-        </div>
-        <div className="my-2">
-          <p className="text-white carFontDetail">I forgot my password</p>
-        </div>
-        <div className="flex w-full my-10">
-          <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-            Login
-          </button>
-        </div>
-        <div>
-          <p className="text-[#F3971F] carFontDetail">
-            by loggin in, you agree with the Privacy Policy of AWS Rent a Car
-          </p>
-        </div>
-      </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="email"
+                id="email"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="email"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="password"
+                id="password"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="password"
+                required
+              />
+            </div>
+            <div className="my-2">
+              <p className="text-white carFontDetail">I forgot my password</p>
+            </div>
+            <div className="flex w-full my-10">
+              <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
+                Login
+              </button>
+            </div>
+            <div>
+              <p className="text-[#F3971F] carFontDetail">
+                by loggin in, you agree with the Privacy Policy of AWS Rent a
+                Car
+              </p>
+            </div>
+          </div>
         </form>
       )}
 
       {signUp && (
         <form>
-        <div className="mx-9 mt-10">
-        <div className="my-2">
-        <p className="text-white carFontDetail">Fields with * must be filled in.</p>
-      </div>
-      <div className="flex w-full mt-4">
-        <input
-          type="text"
-          id="text"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="name"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-        <input
-          type="text"
-          id="last_name"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="last name"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-        <input
-          type="text"
-          id="birth_date"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="date of birth"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-      <input
-          type="text"
-          id="country"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="country of residence"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-      <input
-          type="number"
-          id="phne_number"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="phone number"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-      <input
-          type="email"
-          id="email"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="email"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-        <input
-          type="password"
-          id="password"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="password"
-          required
-        />
-      </div>
-      <div className="flex w-full mt-4">
-        <input
-          type="password"
-          id="confirm_password"
-          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
-          placeholder="confirm password"
-          required
-        />
-      </div>
-      <div className="flex w-full my-10">
-        <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-          Sign Up
-        </button>
-      </div>
-      <div>
-        <p className="text-[#F3971F] carFontDetail">
-          by sigin up, you agree with the Privacy Policy of AWS Rent a Car
-        </p>
-      </div>
-    </div>
-      </form>
+          <div className="mx-9 mt-10">
+            <div className="my-2">
+              <p className="text-white carFontDetail">
+                Fields with * must be filled in.
+              </p>
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="text"
+                id="text"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="name"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="text"
+                id="last_name"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="last name"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="text"
+                id="birth_date"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="date of birth"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="text"
+                id="country"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="country of residence"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="number"
+                id="phne_number"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="phone number"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="email"
+                id="email"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="email"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="password"
+                id="password"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="password"
+                required
+              />
+            </div>
+            <div className="flex w-full mt-4">
+              <input
+                type="password"
+                id="confirm_password"
+                className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
+                placeholder="confirm password"
+                required
+              />
+            </div>
+            <div className="flex w-full my-10">
+              <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
+                Sign Up
+              </button>
+            </div>
+            <div>
+              <p className="text-[#F3971F] carFontDetail">
+                by sigin up, you agree with the Privacy Policy of AWS Rent a Car
+              </p>
+            </div>
+          </div>
+        </form>
       )}
-
     </div>
   );
 };
