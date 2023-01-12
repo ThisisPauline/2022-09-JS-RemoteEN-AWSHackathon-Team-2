@@ -72,7 +72,7 @@ export default function rentCar() {
       : emptyDateDisplay;
 
   return (
-    <div className="h-screen bg-[#242F3E]">
+    <div className="bg-[#242F3E]">
       <Header />
       <div className="flex items-center justify-center">
         <button

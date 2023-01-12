@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="bg-[#242F3E] h-screen pb-[42px]">
+    <div className="bg-[#242F3E] pb-[42px]">
       <Header />
       <Image className="mx-auto mt-10 w-30 h-30" src={awsLogo} />
       <h1 className="flex justify-center mt-5 mb-10 text-white">RENT A CAR</h1>
