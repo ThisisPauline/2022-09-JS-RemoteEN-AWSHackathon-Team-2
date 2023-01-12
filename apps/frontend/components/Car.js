@@ -44,9 +44,12 @@ const Car = ({ cars }) => {
                 </div>
               </div>
             </div>
+            <button className="mt-10 bg-[#F3971F] text-white font-normal py-2 px-4 mx-10 rounded-full w-4/5">
+              Choose Car
+            </button>
 
             {/* THIS IS FOR TESTING PURPOSES */}
-
+{/* 
             <div>
               <b>id:</b> {cars.CarId}
             </div>
@@ -73,10 +76,8 @@ const Car = ({ cars }) => {
             </div>
             <div>
               <b>DailyPrice:</b> {cars.DailyPrice}
-            </div>
-            <button className="mt-10 bg-[#F3971F] text-white font-normal py-2 px-4 mx-10 rounded-full w-4/5">
-              Choose Car
-            </button>
+            </div> */}
+
           </li>
         );
       })}
