@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import logo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
 import cars from "../assets/CARS.png";
+import Link from "next/link";
 
 const login = () => {
   return (
@@ -36,17 +37,29 @@ const login = () => {
             <div className="my-2">
               <p className="text-white carFontDetail">I forgot my password</p>
             </div>
-            <div className="flex w-full my-10">
-              <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-                Login
-              </button>
+            <div className="flex w-full mt-4">
+              <Link className="mx-auto w-full" href="/userAccount">
+                <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mb-[42px] rounded-full w-full">
+                  Log In
+                </button>
+              </Link>
             </div>
           </form>
         </div>
         <div className="text-sm uppercase">
           <p className="text-white">
             don't have an account?{" "}
-            <span className="text-[#F3971F]">sign up</span>
+            <Link href="/signup">
+              <span className="text-[#F3971F]">sign up</span>
+            </Link>
+          </p>
+        </div>
+        <div className="text-sm uppercase mt-5">
+          <p className="text-white mx-auto">
+            Admin
+            <Link href="/signUpAdmin">
+              <span className="text-[#F3971F] ml-2">Sign Up</span>
+            </Link>
           </p>
         </div>
       </div>

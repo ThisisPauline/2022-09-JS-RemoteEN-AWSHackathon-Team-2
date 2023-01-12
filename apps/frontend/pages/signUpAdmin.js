@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const signUpAdmin = () => {
   return (
@@ -82,9 +83,13 @@ const signUpAdmin = () => {
             </p>
           </div>
           <div className="flex w-full my-10">
-            <button className=" bg-[#121A25] text-white font-normal py-2 px-4 rounded-full w-full">
-              Sign Up
-            </button>
+            <div className="flex w-full mt-4">
+              <Link className="mx-auto w-full" href="/adminAccount">
+                <button className="bg-[#121A25] text-white font-normal py-2 px-4 rounded-full w-full">
+                  Sign Up
+                </button>
+              </Link>
+            </div>
           </div>
           <div>
             <p className="text-[#121A25] carFontDetail">

@@ -5,6 +5,7 @@ import Fiat from "../assets/pngwing.png";
 import Paypal from "../assets/paypal-784404_1280.png";
 import Stripe from "../assets/stripe.png";
 import Header from "../components/Header";
+import Link from "next/link";
 
 const orderConfirm = () => {
   return (
@@ -82,23 +83,27 @@ const orderConfirm = () => {
           </div>
         </div>
         <form>
-          <div className="mx-9 mt-10">      
-        <div className="flex w-full mt-10">
-          <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
-            Pay later & Confirm
-          </button>
-        </div>
-        <div className="flex w-full my-4">
-          <button className="flex justify-center bg-white text-white font-normal py-2 px-4 rounded-full w-full">
-            <Image className="w-14" src={Paypal} alt="Paypal" />
-          </button>
-        </div>
-        <div className="flex w-full my-4">
-          <button className="flex justify-center bg-white text-white font-normal py-2 px-4 rounded-full w-full">
-            <Image className="w-14" src={Stripe} alt="Stripe" />
-          </button>
-        </div>
-      </div>
+          <div className="mx-9 mt-10">
+            <div className="flex w-full mt-10">
+              <div className="flex w-full mt-4">
+                <Link className="mx-auto w-full" href="thankYou">
+                  <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
+                    Confirm
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex w-full my-4">
+              <button className="flex justify-center bg-white text-white font-normal py-2 px-4 rounded-full w-full">
+                <Image className="w-14" src={Paypal} alt="Paypal" />
+              </button>
+            </div>
+            <div className="flex w-full my-4">
+              <button className="flex justify-center bg-white text-white font-normal py-2 px-4 rounded-full w-full">
+                <Image className="w-14" src={Stripe} alt="Stripe" />
+              </button>
+            </div>
+          </div>
         </form>
       </div>
     </div>
