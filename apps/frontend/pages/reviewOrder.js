@@ -22,7 +22,7 @@ const ContinueReview = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#242F3E]">
       <Header />
       <div className="flex flex-col mx-9 mt-10">
         <div>
@@ -85,9 +85,9 @@ const ContinueReview = () => {
           <p>€448.8</p>
         </div>
       </div>
-      <div className="flex justify-evenly loginBackground my-6">
+      <div className="flex justify-evenly bg-[#121A25] my-6">
         <div className="w-full pt-3">
-          {logIn ? <button onClick={handleLogIn} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> log in with </button> : <button onClick={handleLogIn} className="text-sm font-normal text-white uppercase pb-2 w-full"> log in with </button>}
+          {logIn ? <button onClick={handleLogIn} className="text-sm font-normal text-white border-b-2 border-[#F3971F]  uppercase pb-2 w-full"> log in with </button> : <button onClick={handleLogIn} className="text-sm font-normal text-white uppercase pb-2 w-full"> log in with </button>}
         </div>
         <div className="w-full pt-3">
           {signUp ? <button onClick={handleSignUp} className="text-sm font-normal text-white border-b-2 border-[#F3971F] uppercase pb-2 w-full"> create an account </button> : <button onClick={handleSignUp} className="text-sm font-normal text-white uppercase pb-2 w-full"> create an account </button>}
@@ -100,7 +100,7 @@ const ContinueReview = () => {
           <input
             type="email"
             id="email"
-            className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+            className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
             placeholder="email"
             required
           />
@@ -109,7 +109,7 @@ const ContinueReview = () => {
           <input
             type="password"
             id="password"
-            className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+            className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
             placeholder="password"
             required
           />
@@ -141,7 +141,7 @@ const ContinueReview = () => {
         <input
           type="text"
           id="text"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="name"
           required
         />
@@ -150,7 +150,7 @@ const ContinueReview = () => {
         <input
           type="text"
           id="last_name"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="last name"
           required
         />
@@ -159,7 +159,7 @@ const ContinueReview = () => {
         <input
           type="text"
           id="birth_date"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="date of birth"
           required
         />
@@ -168,7 +168,7 @@ const ContinueReview = () => {
       <input
           type="text"
           id="country"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="country of residence"
           required
         />
@@ -177,7 +177,7 @@ const ContinueReview = () => {
       <input
           type="number"
           id="phne_number"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="phone number"
           required
         />
@@ -186,7 +186,7 @@ const ContinueReview = () => {
       <input
           type="email"
           id="email"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="email"
           required
         />
@@ -195,7 +195,7 @@ const ContinueReview = () => {
         <input
           type="password"
           id="password"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="password"
           required
         />
@@ -204,7 +204,7 @@ const ContinueReview = () => {
         <input
           type="password"
           id="confirm_password"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="confirm password"
           required
         />

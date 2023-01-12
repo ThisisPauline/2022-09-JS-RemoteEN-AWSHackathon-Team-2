@@ -4,7 +4,7 @@ import logo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
 
 const signUp = () => {
  return (
-    <div className="flex flex-col justify-center h-screen">
+    <div className="flex flex-col justify-center h-screen bg-[#242F3E]">
         <form>
         <div className="flex justify-center mt-8">
               <h1 className="text-2xl font-extrabold uppercase text-[#F3971F]">
@@ -19,7 +19,7 @@ const signUp = () => {
         <input
           type="text"
           id="text"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="name"
           required
         />
@@ -28,7 +28,7 @@ const signUp = () => {
         <input
           type="text"
           id="last_name"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="last name"
           required
         />
@@ -37,7 +37,7 @@ const signUp = () => {
         <input
           type="text"
           id="birth_date"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="date of birth"
           required
         />
@@ -46,7 +46,7 @@ const signUp = () => {
       <input
           type="text"
           id="country"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="country of residence"
           required
         />
@@ -55,7 +55,7 @@ const signUp = () => {
       <input
           type="number"
           id="phne_number"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="phone number"
           required
         />
@@ -64,7 +64,7 @@ const signUp = () => {
       <input
           type="email"
           id="email"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="email"
           required
         />
@@ -73,7 +73,7 @@ const signUp = () => {
         <input
           type="password"
           id="password"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="password"
           required
         />
@@ -82,7 +82,7 @@ const signUp = () => {
         <input
           type="password"
           id="confirm_password"
-          className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+          className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
           placeholder="confirm password"
           required
         />

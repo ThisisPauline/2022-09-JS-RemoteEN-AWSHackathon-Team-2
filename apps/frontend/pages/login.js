@@ -5,7 +5,7 @@ import cars from "../assets/CARS.png";
 
 const login = () => {
   return (
-    <div className="flex flex-col justify-center h-screen">
+    <div className="flex flex-col justify-center h-screen bg-[#242F3E]">
         <div className=" mx-9">
       <div className="flex justify-center">
         <Image src={logo} alt="AWS Logo" />
@@ -19,7 +19,7 @@ const login = () => {
             <input
               type="email"
               id="email"
-              className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+              className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
               placeholder="email"
               required
             />
@@ -28,7 +28,7 @@ const login = () => {
             <input
               type="password"
               id="password"
-              className="border border-[#F3971F] text-white text-sm rounded-full block w-full p-2.5 "
+              className="border border-[#F3971F] bg-[#242F3E] text-white text-sm rounded-full block w-full p-2.5 "
               placeholder="password"
               required
             />

@@ -4,7 +4,7 @@ import logo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
 
 const signUp = () => {
   return (
-    <div className="flex flex-col justify-center h-screen">
+    <div className="flex flex-col justify-center h-screen bg-[#242F3E]">
       <div className=" mx-9">
         <div className="flex justify-center">
           <Image src={logo} alt="AWS Logo" />
