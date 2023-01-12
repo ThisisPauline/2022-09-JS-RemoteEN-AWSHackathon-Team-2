@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
-import cars from "../assets/CARS.png";
 
 const signUp = () => {
   return (
