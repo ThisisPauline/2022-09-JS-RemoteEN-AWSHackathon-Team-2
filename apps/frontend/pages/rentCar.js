@@ -37,7 +37,7 @@ export default function rentCar() {
   }, []);
 
   return (
-    <div>
+    <div className="h-[100%] bg-[#242F3E]">
       <Header />
       <div className="flex items-center justify-center">
         <button
@@ -80,7 +80,7 @@ export default function rentCar() {
       <div className="flex items-center justify-center">
         <select
           name="hours"
-          className="  border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 rounded-full w-[272px] text-[13px]"
+          className=" bg-[#242F3E] border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 rounded-full w-[272px] text-[13px]"
         >
           <option value="city, airport">city, airport</option>
           <option value="Las Palmas Gran Canaria Airport">
@@ -116,7 +116,7 @@ export default function rentCar() {
       <div className="flex items-center justify-center">
         <select
           name="hours"
-          className="  border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 mb-[42px] rounded-full w-[272px] text-[13px]"
+          className="  bg-[#242F3E] border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 pl-[10px] mx-8 mt-2 mb-[42px] rounded-full w-[272px] text-[13px]"
         >
           <option value="Country of residence">Country of residence</option>
           <option value="France">France</option>
@@ -130,8 +130,8 @@ export default function rentCar() {
           <option value="Croatia">Croatia</option>
         </select>
       </div>
-      <div className="flex w-full mt-4 mb-10">
-        <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 rounded-full w-full">
+      <div className="flex w-full mt-4">
+        <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 mb-[42px] rounded-full w-full">
           Search
         </button>
       </div>
