@@ -97,7 +97,7 @@ export default function rentCar() {
         </select>
       </div>
       <div className="flex items-center mt-[42px] mb-[42px] justify-center">
-        <div className="mr-[30px]">
+        <div className="mr-[30px] flex flex-col items-center">
           <p className="text-[#F3971F] text-[14px]">PICK UP</p>
           <p className="text-[white] text-[64px]">day</p>
           <p className="text-[white] text-[14px]">month</p>
@@ -106,7 +106,7 @@ export default function rentCar() {
         <div>
           <Image src={separator} />
         </div>
-        <div className="ml-[30px]">
+        <div className="ml-[30px] flex flex-col items-center">
           <p className="text-[#F3971F] text-[14px]">DROP-OFF</p>
           <p className="text-[white] text-[64px]">day</p>
           <p className="text-[white] text-[14px]">month</p>
