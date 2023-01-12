@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../assets/1280px-Amazon_Web_Services_Logo 1.png";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Link from "next/link";
 
 const orderConfirm = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -119,14 +120,18 @@ const orderConfirm = () => {
             </div>
             <div className="my-10">
               <div className="flex w-full mt-4">
-                <button className="border border-[#F3971F] text-white font-normal py-2 px-4 mx-8 mt-2 rounded-full w-full">
-                  Cancel
-                </button>
+                <Link className="mx-auto w-full" href="/userAccount">
+                  <button className="border border-[#F3971F] text-white font-normal py-2 px-4 rounded-full w-full">
+                    Cancel
+                  </button>
+                </Link>
               </div>
-              <div className="flex w-full my-4">
-                <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 rounded-full w-full">
-                  Confirm
-                </button>
+              <div className="flex w-full mt-4">
+                <Link className="mx-auto w-full" href="/userAccount">
+                  <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mb-[42px] rounded-full w-full">
+                    Confirm
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

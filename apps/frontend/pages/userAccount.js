@@ -29,7 +29,7 @@ const orderConfirm = () => {
               <p className="uppercase text-white text-sm">
                 personal information
               </p>
-              <p className="text-[#F3971F]">edit</p>
+              <Link href="userEdit"><p className="text-[#F3971F]">edit</p></Link>
             </div>
             <div className="relative flex py-5 items-center">
               <div className="flex-grow border-t border-[#F3971F]"></div>
@@ -49,7 +49,7 @@ const orderConfirm = () => {
           <div>
             <div className="flex justify-between items-center">
               <p className="uppercase text-white text-sm">my bookings</p>
-              <IoChevronForwardCircleOutline className="text-2xl text-[#F3971F]" />
+              <Link href="/myBookings"><IoChevronForwardCircleOutline className="text-2xl text-[#F3971F]" /></Link>
             </div>
             <div className="relative flex py-5 items-center">
               <div className="flex-grow border-t border-[#F3971F]"></div>
