@@ -59,9 +59,25 @@
         background-color: #242F3E !important;
         border: 0 !important;
         text-align: end !important;
+        padding: 0 !important;
     }
-    .react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header{
+    .react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header as .datePickerColor{
         color: #fff !important;
+        text-align: center !important;
+        
+    }
+    .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name as .datePickerFontColor{
+        color: #7A7585 !important;
+    }
+    .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range as .dateBgSelector {
+        background-color: #F3971F !important;
+    }
+
+    .react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected as .dateBgSelectorOnChange {
+        background-color: #F3971F !important;
+    }
+    .react-datepicker__input-container{
+        display: grid !important;
     }
 }
 

@@ -55,7 +55,7 @@ const orderConfirm = () => {
               <div className="flex justify-between items-center">
                 <p className="text-white uppercase w-full">date of birth</p>
                 <DatePicker
-                  className="bg-[#242F3E] placeholder-[#F3971F] uppercase text-[#F3971F] text-sm justify-end react-datepicker__header [react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header]"
+                  className="bg-[#242F3E] placeholder-[#F3971F] uppercase text-[#F3971F] text-sm justify-end react-datepicker__header datePickerColor datePickerFontColor dateBgSelector react-datepicker__input-container dateBgSelectorOnChange"
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                 />
