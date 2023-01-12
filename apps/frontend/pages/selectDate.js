@@ -1,5 +1,6 @@
 import React from "react";
 import DatePicker from "../components/DatePicker";
+import Link from "next/link";
 
 const SelectDate = () => {
   return (
@@ -80,15 +81,19 @@ const SelectDate = () => {
         </div>
       </div>
       <div className="flex w-full mt-4">
-        <button className="border border-[#F3971F] text-white font-normal py-2 px-4 mx-8 mt-2 rounded-full w-full">
-          Cancel
-        </button>
-      </div>
-      <div className="flex w-full my-4">
-        <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 rounded-full w-full">
-          Confirm
-        </button>
-      </div>
+              <Link className="mx-auto w-1/2" href="/rentCar">
+                <button className="border border-[#F3971F] text-white font-normal py-2 px-4   rounded-full w-full">
+                  Cancel
+                </button>
+              </Link>
+            </div>
+            <div className="flex w-full mt-4">
+              <Link className="mx-auto w-1/2" href="/rentCar">
+                <button className=" bg-[#F3971F] text-white font-normal py-2 px-4  mb-[42px] rounded-full w-full">
+                  Confirm
+                </button>
+              </Link>
+            </div>
     </div>
   );
 };

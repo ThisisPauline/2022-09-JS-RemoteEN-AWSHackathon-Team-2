@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Car = ({ cars }) => {
   return (
@@ -35,7 +36,7 @@ const Car = ({ cars }) => {
                 </div>
                 <div className="border-l-2 border-[#F3971F] h-8">
                   <p className="carFontDetail font-normal text-white ml-2">
-                   {cars.PowerSteering}
+                    {cars.PowerSteering}
                   </p>
                 </div>
                 <div className="border-l-2 border-[#F3971F] h-8">
@@ -45,9 +46,13 @@ const Car = ({ cars }) => {
                 </div>
               </div>
             </div>
-            <button className="mb-20 mt-10 bg-[#F3971F] text-white font-normal py-2 px-4 mx-10 rounded-full w-4/5">
-              Choose Car
-            </button>
+            <div className="flex w-full mt-4">
+              <Link className="mx-auto w-1/2" href="/reviewOrder">
+                <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mt-5 mb-[42px] rounded-full w-full">
+                  Choose
+                </button>
+              </Link>
+            </div>
           </li>
         );
       })}

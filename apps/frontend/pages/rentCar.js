@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
 import separator from "../assets/separator.svg";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -96,23 +97,26 @@ export default function rentCar() {
           <option value="Barcelona">Barcelona</option>
         </select>
       </div>
-      <div className="flex items-center mt-[42px] mb-[42px] justify-center">
-        <div className="mr-[30px] flex flex-col items-center">
-          <p className="text-[#F3971F] text-[14px]">PICK UP</p>
-          <p className="text-[white] text-[64px]">day</p>
-          <p className="text-[white] text-[14px]">month</p>
-          <p className="text-[#F3971F] text-[14px]">hour</p>
+      <Link className="" href="/selectDate">
+        <div className="flex items-center mt-[42px] mb-[42px] justify-center">
+          <div className="mr-[30px] flex flex-col items-center">
+            <p className="text-[#F3971F] text-[14px]">PICK UP</p>
+            <p className="text-[white] text-[64px]">day</p>
+            <p className="text-[white] text-[14px]">month</p>
+            <p className="text-[#F3971F] text-[14px]">hour</p>
+          </div>
+
+          <div>
+            <Image src={separator} />
+          </div>
+          <div className="ml-[30px] flex flex-col items-center">
+            <p className="text-[#F3971F] text-[14px]">DROP-OFF</p>
+            <p className="text-[white] text-[64px]">day</p>
+            <p className="text-[white] text-[14px]">month</p>
+            <p className="text-[#F3971F] text-[14px]">hour</p>
+          </div>
         </div>
-        <div>
-          <Image src={separator} />
-        </div>
-        <div className="ml-[30px] flex flex-col items-center">
-          <p className="text-[#F3971F] text-[14px]">DROP-OFF</p>
-          <p className="text-[white] text-[64px]">day</p>
-          <p className="text-[white] text-[14px]">month</p>
-          <p className="text-[#F3971F] text-[14px]">hour</p>
-        </div>
-      </div>
+      </Link>
       <div className="flex items-center justify-center">
         <select
           name="hours"
@@ -131,9 +135,11 @@ export default function rentCar() {
         </select>
       </div>
       <div className="flex w-full mt-4">
-        <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mx-8 mb-[42px] rounded-full w-full">
-          Search
-        </button>
+        <Link className="mx-auto w-1/2" href="/chooseCar">
+          <button className=" bg-[#F3971F] text-white font-normal py-2 px-4 mb-[42px] rounded-full w-full">
+            Search
+          </button>
+        </Link>
       </div>
     </div>
   );
