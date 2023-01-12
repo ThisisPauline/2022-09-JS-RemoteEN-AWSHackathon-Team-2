@@ -24,14 +24,6 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-<<<<<<< HEAD
-=======
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
->>>>>>> d0f1596d6096a1d66827a8cece3c036f7d161635
 **/.env
 **/.env.local
 **/.env.development.local
