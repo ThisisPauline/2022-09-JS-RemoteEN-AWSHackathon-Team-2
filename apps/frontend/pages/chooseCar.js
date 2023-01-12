@@ -24,7 +24,7 @@ export default function Home() {
 
   console.log(cars);
   return (
-    <div className="bg-[#242F3E] h-screen">
+    <div className="bg-[#242F3E] h-full">
       <Header />
 
       <h1 className="flex align-left ml-[36px] mt-[47px] text-[#F3971F] text-[32px] font-[800]">

@@ -25,6 +25,7 @@ const DatePicker = () => {
         moveRangeOnFirstSelection={false}
         ranges={state}
         rangeColors={["#F3971F"]}
+        color={"white"}
         showMonthArrow={false}
         className="sm:mx-auto rdrDateDisplay rdrCalendarWrapper rdrDateDisplayWrapper [rdrDayNumber span] rdrWeekDay [rdrMonthAndYearPickers select] [rdrDateDisplayItem input] rdrDateDisplay"
       />
