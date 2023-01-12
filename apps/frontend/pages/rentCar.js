@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Header from "../components/Header";
 import { useState, useEffect } from "react";
+import separator from "../assets/separator.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -79,7 +80,7 @@ export default function rentCar() {
       <div className="flex items-center justify-center">
         <select
           name="hours"
-          className="  border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 rounded-full w-[272px]"
+          className="  border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 rounded-full w-[272px] text-[13px]"
         >
           <option value="city, airport">city, airport</option>
           <option value="Las Palmas Gran Canaria Airport">
@@ -95,27 +96,27 @@ export default function rentCar() {
           <option value="Barcelona">Barcelona</option>
         </select>
       </div>
-      <div>
-        <div>
-          <p>Pick up</p>
-          {date}
-          {month}
-          {hour}
+      <div className="flex items-center mt-[42px] mb-[42px] justify-center">
+        <div className="mr-[30px]">
+          <p className="text-[#F3971F] text-[14px]">PICK UP</p>
+          <p className="text-[white] text-[64px]">day</p>
+          <p className="text-[white] text-[14px]">month</p>
+          <p className="text-[#F3971F] text-[14px]">hour</p>
         </div>
         <div>
-          <Image></Image>
+          <Image src={separator} />
         </div>
-        <div>
-          <p>Drop-off</p>
-          {date}
-          {month}
-          {hour}
+        <div className="ml-[30px]">
+          <p className="text-[#F3971F] text-[14px]">DROP-OFF</p>
+          <p className="text-[white] text-[64px]">day</p>
+          <p className="text-[white] text-[14px]">month</p>
+          <p className="text-[#F3971F] text-[14px]">hour</p>
         </div>
       </div>
       <div className="flex items-center justify-center">
         <select
           name="hours"
-          className="  border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 rounded-full w-[272px]"
+          className="  border border-[#F3971F] text-[#F3971F] font-normal py-2 px-4 mx-8 mt-2 mb-[42px] rounded-full w-[272px] text-[13px]"
         >
           <option value="Country of residence">Country of residence</option>
           <option value="France">France</option>
