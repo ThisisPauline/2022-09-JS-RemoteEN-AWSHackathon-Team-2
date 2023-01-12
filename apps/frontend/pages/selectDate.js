@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import DatePicker from "../components/DatePicker";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ const SelectDate = () => {
       </div>
       <div className="flex justify-evenly my-8">
         <div>
-        <p className="text-xs text-center text-[#F3971F]">pick-up time</p>
+          <p className="text-xs text-center text-[#F3971F]">pick-up time</p>
           <select
             name="hours"
             className="bg-transparent text-sm text-white appearance-none outline-none"
@@ -45,7 +45,7 @@ const SelectDate = () => {
           </select>
         </div>
         <div>
-        <p className="text-xs text-center text-[#F3971F]">drop-off time</p>
+          <p className="text-xs text-center text-[#F3971F]">drop-off time</p>
           <select
             name="hours"
             className="bg-transparent text-sm text-white appearance-none outline-none"
@@ -81,19 +81,19 @@ const SelectDate = () => {
         </div>
       </div>
       <div className="flex w-full mt-4">
-              <Link className="mx-auto w-1/2" href="/rentCar">
-                <button className="border border-[#F3971F] text-white font-normal py-2 px-4   rounded-full w-full">
-                  Cancel
-                </button>
-              </Link>
-            </div>
-            <div className="flex w-full mt-4">
-              <Link className="mx-auto w-1/2" href="/rentCar">
-                <button className=" bg-[#F3971F] text-white font-normal py-2 px-4  mb-[42px] rounded-full w-full">
-                  Confirm
-                </button>
-              </Link>
-            </div>
+        <Link className="mx-auto w-1/2" href="/rentCar">
+          <button className="border border-[#F3971F] text-white font-normal py-2 px-4   rounded-full w-full">
+            Cancel
+          </button>
+        </Link>
+      </div>
+      <div className="flex w-full mt-4">
+        <Link className="mx-auto w-1/2" href="/rentCar">
+          <button className=" bg-[#F3971F] text-white font-normal py-2 px-4  mb-[42px] rounded-full w-full">
+            Confirm
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

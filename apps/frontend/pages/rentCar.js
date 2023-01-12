@@ -38,7 +38,7 @@ export default function rentCar() {
   }, []);
 
   return (
-    <div className="h-[100%] bg-[#242F3E]">
+    <div className="h-screen bg-[#242F3E]">
       <Header />
       <div className="flex items-center justify-center">
         <button
