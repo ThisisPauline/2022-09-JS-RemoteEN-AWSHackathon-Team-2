@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { useState } from "react";
+import { BookingContext } from "../context/BookingContext";
+
+export const DatePickerDefaultRange = [
+  {
+    startDate: new Date(),
+    endDate: new Date(),
+    key: "selection",
+  },
+];
 
 const DatePicker = () => {
-  const [state, setState] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: "selection",
-    },
-  ]);
+  const { bookingStatus, setBookingStatus } = useContext(BookingContext);
 
   return (
     <div>
@@ -21,9 +24,9 @@ const DatePicker = () => {
       </div>
       <DateRange
         editableDateInputs={true}
-        onChange={(item) => setState([item.selection])}
+        onChange={(item) => setBookingStatus({...bookingStatus, dateRange: [item.selection]})}
         moveRangeOnFirstSelection={false}
-        ranges={state}
+        ranges={bookingStatus.dateRange}
         rangeColors={["#F3971F"]}
         color={"white"}
         showMonthArrow={false}

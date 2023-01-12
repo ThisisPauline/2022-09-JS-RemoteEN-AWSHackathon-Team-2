@@ -2,13 +2,17 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Header from "../components/Header";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import separator from "../assets/separator.svg";
 import Link from "next/link";
+import { BookingContext } from "../context/BookingContext";
+import { DatePickerDefaultRange } from "../components/DatePicker";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function rentCar() {
+  const { bookingStatus, setBookingStatus } = useContext(BookingContext);
+
   const [cars, setCars] = useState(true);
   const [vans, setVans] = useState(false);
   const [prestige, setPrestige] = useState(false);
@@ -37,8 +41,38 @@ export default function rentCar() {
     setPrestige(false);
   }, []);
 
+  const emptyDateDisplay = {
+    day: "day",
+    month: "month",
+    hour: "hour",
+  };
+
+  const MonthFormat = new Intl.DateTimeFormat("en-US", { month: "long" });
+
+  const pickUp =
+    bookingStatus.dateRange[0] != null &&
+    bookingStatus.dateRange[0] != DatePickerDefaultRange[0]
+      ? {
+          day: bookingStatus.dateRange[0].startDate.getDate(),
+          month: MonthFormat.format(bookingStatus.dateRange[0].startDate),
+          // TODO:
+          hour: "10:00 AM",
+        }
+      : emptyDateDisplay;
+
+  const dropOff =
+    bookingStatus.dateRange[0] != null &&
+    bookingStatus.dateRange[0] != DatePickerDefaultRange[0]
+      ? {
+          day: bookingStatus.dateRange[0].endDate.getDate(),
+          month: MonthFormat.format(bookingStatus.dateRange[0].endDate),
+          // TODO:
+          hour: "6:00 PM",
+        }
+      : emptyDateDisplay;
+
   return (
-    <div className="h-[100%] bg-[#242F3E]">
+    <div className="h-screen bg-[#242F3E]">
       <Header />
       <div className="flex items-center justify-center">
         <button
@@ -101,9 +135,9 @@ export default function rentCar() {
         <div className="flex items-center mt-[42px] mb-[42px] justify-center">
           <div className="mr-[30px] flex flex-col items-center">
             <p className="text-[#F3971F] text-[14px]">PICK UP</p>
-            <p className="text-[white] text-[64px]">day</p>
-            <p className="text-[white] text-[14px]">month</p>
-            <p className="text-[#F3971F] text-[14px]">hour</p>
+            <p className="text-[white] text-[64px]">{pickUp.day}</p>
+            <p className="text-[white] text-[14px]">{pickUp.month}</p>
+            <p className="text-[#F3971F] text-[14px]">{pickUp.hour}</p>
           </div>
 
           <div>
@@ -111,9 +145,9 @@ export default function rentCar() {
           </div>
           <div className="ml-[30px] flex flex-col items-center">
             <p className="text-[#F3971F] text-[14px]">DROP-OFF</p>
-            <p className="text-[white] text-[64px]">day</p>
-            <p className="text-[white] text-[14px]">month</p>
-            <p className="text-[#F3971F] text-[14px]">hour</p>
+            <p className="text-[white] text-[64px]">{dropOff.day}</p>
+            <p className="text-[white] text-[14px]">{dropOff.month}</p>
+            <p className="text-[#F3971F] text-[14px]">{dropOff.hour}</p>
           </div>
         </div>
       </Link>
