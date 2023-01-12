@@ -5,6 +5,7 @@ import logoDark from "../assets/logo-dark.svg";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { IoChevronForwardCircleOutline } from "react-icons/io5";
 import { BiLockAlt, BiLogOutCircle } from "react-icons/bi";
+import Link from "next/link";
 
 const accountCompanyInfo = () => {
   return (
@@ -59,14 +60,24 @@ const accountCompanyInfo = () => {
             <div className="flex-grow border-t border-[#242F3E]"></div>
           </div>
 
-          <button className="border border-[#242F3E] text-[#242F3E] font-normal py-2 px-4  mt-[42px] rounded-full w-full">
-            Cancel
-          </button>
+          <div className="flex w-full my-10">
+            <div className="flex w-full mt-4">
+              <Link className="mx-auto w-full" href="/accountCompany">
+                <button className="border border-[#242F3E] text-[#121A25] text-white font-normal py-2 px-4 rounded-full w-full">
+                  Cancel
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="flex w-full mt-4">
-          <button className=" bg-[#242F3E] text-white font-normal py-2 px-4  mb-[42px] rounded-full w-full">
-            Save
-          </button>
+        <div className="flex w-full mb-10">
+          <div className="flex w-full">
+            <Link className="mx-auto w-full" href="/accountCompany">
+              <button className="bg-[#121A25] text-white font-normal py-2 px-4 rounded-full w-full">
+                Save
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
