@@ -1,6 +1,5 @@
 import close from "../assets/close.svg";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function Menu({ menu, setMenu }) {
   function handleOnClick() {

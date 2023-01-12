@@ -3,10 +3,19 @@ import hamburger from "../assets/menu.png";
 import login from "../assets/login.png";
 import Image from "next/image";
 import Menu from "./Menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function header() {
   const [menu, setMenu] = useState(false);
+  const [_document, set_document] = useState(null);
+
+  useEffect(() => {
+    set_document(document);
+  }, []);
+
+  menu
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
 
   function handleOnClick() {
     setMenu(!menu);
