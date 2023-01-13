@@ -38,7 +38,9 @@ const ContinueReview = () => {
         {selectedCar != null ? (
           <>
             <div className="mt-10">
-              <p className="text-sm font-medium text-white">selectedCar.CarName</p>
+              <p className="text-sm font-medium text-white">
+                selectedCar.CarName
+              </p>
               <p
                 className="text-xs
 font-normal text-white"
@@ -48,7 +50,12 @@ font-normal text-white"
             </div>
             <div className="flex">
               <div className="mr-10">
-                <Image src={selectedCar.CarImage} alt="Fiat 500" />
+                <Image
+                  src={selectedCar.CarImage}
+                  alt="Selected Car"
+                  width={500}
+                  height={500}
+                />
               </div>
               <div className="grid grid-rows-2 grid-flow-col gap-2 items-center">
                 <div className="border-l-2 border-[#F3971F] h-8">
