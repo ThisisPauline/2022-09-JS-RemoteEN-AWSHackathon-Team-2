@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import Image from "next/image";
 import Fiat from "../assets/pngwing.png";
@@ -6,6 +6,7 @@ import Paypal from "../assets/paypal-784404_1280.png";
 import Stripe from "../assets/stripe.png";
 import Header from "../components/Header";
 import Link from "next/link";
+import { BookingContext } from "../context/BookingContext";
 
 const orderConfirm = () => {
   const { bookingStatus } = useContext(BookingContext);
