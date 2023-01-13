@@ -39,7 +39,7 @@ const ContinueReview = () => {
           <>
             <div className="mt-10">
               <p className="text-sm font-medium text-white">
-                selectedCar.CarName
+                {selectedCar.CarName}
               </p>
               <p
                 className="text-xs
