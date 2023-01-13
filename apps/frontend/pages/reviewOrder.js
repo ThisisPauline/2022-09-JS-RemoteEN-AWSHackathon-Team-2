@@ -53,17 +53,17 @@ font-normal text-white"
               <div className="grid grid-rows-2 grid-flow-col gap-2 items-center">
                 <div className="border-l-2 border-[#F3971F] h-8">
                   <p className="carFontDetail font-normal text-white ml-2">
-                    {car.TransmissionMode} Transmission
+                    {selectedCar.TransmissionMode} Transmission
                   </p>
                 </div>
                 <div className="border-l-2 border-[#F3971F] h-8">
                   <p className="carFontDetail font-normal text-white ml-2">
-                    {car.NbPassengers} Passengers
+                    {selectedCar.NbPassengers} Passengers
                   </p>
                 </div>
                 <div className="border-l-2 border-[#F3971F] h-8">
                   <p className="carFontDetail font-normal text-white ml-2">
-                    {car.PowerSteering}
+                    {selectedCar.PowerSteering}
                   </p>
                 </div>
                 <div className="border-l-2 border-[#F3971F] h-8">
@@ -71,7 +71,7 @@ font-normal text-white"
                     className="carFontDetail font-normal
 text-white ml-2"
                   >
-                    {car.NbDoors} Doors
+                    {selectedCar.NbDoors} Doors
                   </p>
                 </div>
               </div>
