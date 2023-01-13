@@ -7,6 +7,7 @@ import { CiBullhorn } from "react-icons/ci";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { IoKeyOutline, IoCarSportOutline } from "react-icons/io5";
 import { BiTransferAlt, BiLogOutCircle } from "react-icons/bi";
+import Link from "next/link";
 
 const adminAccount = () => {
   return (
@@ -104,7 +105,7 @@ const adminAccount = () => {
       <div className="flex flex-col justify-center bg-[#242F3E]">
       <div className="my-10">
         <div className="flex justify-center">
-          <Image src={logo} alt="AWS Logo" />
+          <Link href="/"><Image src={logo} alt="AWS Logo" /></Link>
         </div>
         <div className="flex text-sm uppercase justify-center mt-2">
           <p className="text-white">rent a car </p>

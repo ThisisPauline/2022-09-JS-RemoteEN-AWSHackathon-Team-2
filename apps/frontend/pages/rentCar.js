@@ -95,7 +95,7 @@ export default function rentCar() {
           }
           onClick={handleVansChange}
         >
-          VANS & TRACKS
+          VANS & TRUCKS
         </button>
         <button
           type="button"

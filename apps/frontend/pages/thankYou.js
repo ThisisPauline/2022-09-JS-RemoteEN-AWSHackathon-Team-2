@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const thankYou = () => {
   return (
-    <div className="bg-[#121A25]">
+    <div className="bg-[#121A25] w-full">
         <Link href="/"><Image className="ml-80 pt-10" src={close} /></Link>
       <div className="flex flex-col h-screen mx-9 justify-center items-center">
         <div className="-mt-20">

@@ -9,7 +9,7 @@ const login = () => {
     <div className="flex flex-col justify-center h-screen bg-[#242F3E]">
       <div className=" mx-9">
         <div className="flex justify-center">
-          <Image src={logo} alt="AWS Logo" />
+          <Link href="/"><Image src={logo} alt="AWS Logo" /></Link>
         </div>
         <div className="flex text-sm uppercase justify-center mt-2">
           <p className="text-white">rent a car </p>
