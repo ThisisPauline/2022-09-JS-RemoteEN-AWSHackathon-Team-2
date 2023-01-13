@@ -8,6 +8,9 @@ import Header from "../components/Header";
 import Link from "next/link";
 
 const orderConfirm = () => {
+  const { bookingStatus } = useContext(BookingContext);
+  const selectedCar = bookingStatus.selectedCar;
+
   return (
     <div className="bg-[#121A25]">
       <div className="bg-[#121A25]">
@@ -27,60 +30,78 @@ const orderConfirm = () => {
               Review Order
             </h1>
           </div>
-          <div className="mt-10">
-            <p className="text-sm font-medium text-white">Fiat 500</p>
-            <p className="text-xs font-normal text-white">or similar Economy</p>
-          </div>
-          <div className="flex">
-            <div className="mr-10">
-              <Image src={Fiat} alt="Fiat 500" />
-            </div>
-            <div className="grid grid-rows-2 grid-flow-col gap-2 items-center">
-              <div className="border-l-2 border-[#F3971F] h-8">
-                <p className="carFontDetail font-normal text-white ml-2">
-                  automatic transmission
+
+          {selectedCar != null ? (
+            <>
+              <div className="mt-10">
+                <p className="text-sm font-medium text-white">
+                  {selectedCar.CarName}
+                </p>
+                <p className="text-xs font-normal text-white">
+                  or similar Economy
                 </p>
               </div>
-              <div className="border-l-2 border-[#F3971F] h-8">
-                <p className="carFontDetail font-normal text-white ml-2">
-                  5 passengers
-                </p>
+              <div className="flex">
+                <div className="mr-10">
+                  <Image
+                    src={selectedCar.CarImage}
+                    alt="Selected Car"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <div className="grid grid-rows-2 grid-flow-col gap-2 items-center">
+                  <div className="border-l-2 border-[#F3971F] h-8">
+                    <p className="carFontDetail font-normal text-white ml-2">
+                      {selectedCar.TransmissionMode} Transmission
+                    </p>
+                  </div>
+                  <div className="border-l-2 border-[#F3971F] h-8">
+                    <p className="carFontDetail font-normal text-white ml-2">
+                      {selectedCar.NbPassengers} Passengers
+                    </p>
+                  </div>
+                  <div className="border-l-2 border-[#F3971F] h-8">
+                    <p className="carFontDetail font-normal text-white ml-2">
+                      {selectedCar.PowerSteering}
+                    </p>
+                  </div>
+                  <div className="border-l-2 border-[#F3971F] h-8">
+                    <p className="carFontDetail font-normal text-white ml-2">
+                      {selectedCar.NbDoors} Doors
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="border-l-2 border-[#F3971F] h-8">
-                <p className="carFontDetail font-normal text-white ml-2">
-                  power steering
-                </p>
+              <div className="flex gap-4 my-8">
+                <div>
+                  <p className="text-xs text-white">Pick up</p>
+                  <p className="text-xs font-bold text-[#F3971F]">
+                    Las Palmas Gran Canaria Airport
+                  </p>
+                  <p className="text-xs text-white">2023-02-02 - 10:00</p>
+                </div>
+                <div>
+                  <p className="text-xs text-white">Return</p>
+                  <p className="text-xs font-bold text-[#F3971F]">
+                    Las Palmas Gran Canaria Airport
+                  </p>
+                  <p className="text-xs text-white">2023-02-02 - 10:00</p>
+                </div>
               </div>
-              <div className="border-l-2 border-[#F3971F] h-8">
-                <p className="carFontDetail font-normal text-white ml-2">
-                  2 doors
-                </p>
+              <div className="relative flex py-5 items-center">
+                <div className="flex-grow border-t border-[#F3971F]"></div>
               </div>
+              <div className="flex justify-between text-2xl font-extrabold text-[#F3971F] uppercase">
+                <p>total</p>
+                <p>€448.8</p>
+              </div>
+            </>
+          ) : (
+            <div className="flex items-center justify-center h-96 text-[#F3971F]">
+              <p>Loading...</p>
             </div>
-          </div>
-          <div className="flex gap-4 my-8">
-            <div>
-              <p className="text-xs text-white">Pick up</p>
-              <p className="text-xs font-bold text-[#F3971F]">
-                Las Palmas Gran Canaria Airport
-              </p>
-              <p className="text-xs text-white">2023-02-02 - 10:00</p>
-            </div>
-            <div>
-              <p className="text-xs text-white">Return</p>
-              <p className="text-xs font-bold text-[#F3971F]">
-                Las Palmas Gran Canaria Airport
-              </p>
-              <p className="text-xs text-white">2023-02-02 - 10:00</p>
-            </div>
-          </div>
-          <div className="relative flex py-5 items-center">
-            <div className="flex-grow border-t border-[#F3971F]"></div>
-          </div>
-          <div className="flex justify-between text-2xl font-extrabold text-[#F3971F] uppercase">
-            <p>total</p>
-            <p>€448.8</p>
-          </div>
+          )}
         </div>
         <form>
           <div className="mx-9 mt-10">
