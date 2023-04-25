@@ -1,11 +1,22 @@
+# AWS Hackathon
+
+![AWS Hackathon](https://i.imgur.com/gJI3nw1.jpg)
+
 This is the public official Repository from our hackathon group (Pauline Kraus, Russell Corpuz, Anna Valchuk, Osvaldo Felices, Pierre Basck)
 This hackathon took place from 10/01/23 to 13/01/23 and was hosted by Wild Code School with the participation of Amazon.
 
+## Introduction
+Our team took part in the AWS hackathon, a 48-hour challenge to create innovative solutions for the car rental industry. With AWS providing the essential infrastructure, we focused on generating ideas, creating prototypes, and presenting our solutions to expert judges. Our hard work and dedication resulted in a top-three placement, showcasing the power of collaboration and innovation in transforming industries.
 
+## Credits
 
-# Turborepo starter
+If you want to reference this project, please make sure to quote the people involved in it.
 
-This is an official pnpm starter turborepo.
+- Pauline Kraus: @ThisisPauline
+- Pierre Basck: @dreanx
+- Osvaldo Felices: @osvfelices
+- Anna Vachluk: @anna-valchuk
+- Russell James Corpuz: RussellCorpuz
 
 ## What's inside?
 
